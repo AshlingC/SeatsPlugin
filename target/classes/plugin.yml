@@ -1,0 +1,27 @@
+name: Seats
+version: '1.0'
+main: org.seats.seats.Seats
+api-version: '1.20'
+commands:
+  createseat:
+    description: Creates a seat at the targeted block.
+    usage: /<command>
+    permission: seats.createseat
+  deleteseat:
+    description: Deletes the seat you are looking at.
+    usage: /<command>
+    permission: seats.deleteseat
+  deleteallseats:
+    description: Deletes all seats.
+    usage: /<command>
+    permission: seats.deleteallseats
+permissions:
+  seats.createseat:
+    description: Allows creating a seat.
+    default: op
+  seats.deleteseat:
+    description: Allows deleting a specific seat.
+    default: op
+  seats.deleteallseats:
+    description: Allows deleting all seats.
+    default: op
